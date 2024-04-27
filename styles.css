@@ -1,0 +1,320 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* Index */
+/* todo lo de abajo va para el index hasta lo indique */
+
+
+
+nav {   /* Barra del menu  */
+  
+  background-color: #1B414E; 
+}
+
+
+
+ul {
+  list-style-type: none;    /* Quita los puntos de la lista */
+  overflow: hidden; /* Oculta cualquier contenido que sobresalga de la lista */
+  display: flex; /* organiza los elementos en forma de columnas */
+  height: 50px;
+}
+
+
+
+li a {
+  
+  height: 50px;
+  padding: 0px 40px 0px 40px; 
+  color:white; /* Color del texto */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  font-family: "Arial Black"; /* Tipo de fuente */
+  
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+
+}
+
+/* MAIN */
+/* pasamos al main del index*/
+
+
+main {  /* Main del index*/
+
+  min-height: 100vh; /* Main ocupe como minimo el 100% de la altura del viewport */
+  background-color: #337992;
+
+}
+
+.imagen_principal{
+  width: 100vw;  /*el elemento medirá lo mismo que del 100% de la anchura de la ventana del navegador*/
+  height: 40vh; /*el elemento medirá lo mismo que del 40% de la anchura de la ventana del navegador*/
+}
+
+
+
+  
+.lista_imagenes img{
+  width: 300px; /* Ancho de cada imagen */
+  height: 200px; /* Alto del cada imagen */
+  margin-right: 10px;  /* el espaciado entre cada imagen */
+  
+}
+  
+
+
+.lista_imagenes {
+  display: flex;
+  overflow-y:auto ; /* Mostrar barras de desplazamiento vertical cuando sea necesario */
+}
+
+
+.titulos{
+
+  color: white; /* Color del texto */
+  text-align: center; /* centra el texto en su linea */  
+}
+
+.galeria2 {
+  display: flex;
+  overflow-y:auto ;/* Mostrar barras de desplazamiento vertical cuando sea necesario */
+}
+
+.card{
+
+  margin-right: 10px;  /* el espaciado entre cada imagen */
+  width: 100%; 
+
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+
+
+.cuerpocard{
+  position: center; /* centra el texto de la descripcion de la imagen */
+  padding: 10px;  /* espacio entre los bordes de un elemento y su contenido */
+  background-color: rgba(0,0,0,0.3); /* selecciona un color de fondo y el ultimo numero da la tranparencia del fondo */
+  color: azure; /* color de la letras */
+
+}
+
+
+.card img{
+  width: 300px; /* el ancho de cada imagen */
+  height: 300px; /* el largo de cada imagen */
+}
+
+
+/* footer */
+/* el pie de la pagina*/
+
+.footer {
+  display: flex; 
+  background-color: #1B414E; /* color del footer */
+}
+
+/* redes img, son los logos y links para que los usuarios vallan a las rede */
+
+.redes img { 
+  width: 50px; /* el ancho del logo */
+  height: 50px; /* el largo del logo */
+}
+
+.datos {
+  color: white; /* Color del texto */
+  margin-left: auto; /* el espaciado entre cada imagen (margen izquierdo) */
+  
+}
+
+
+/* contacto */
+/* Ahora pasamos a la partde del css de contacto*/
+
+
+.contenedor_contacto {
+  text-align: center;  /* centra el texto en su linea */  
+  display: flex; 
+}
+
+
+.ingreso_datos_contacto{
+  text-align: center; /* centra el texto en su linea */ 
+  width: 100%; /* el ancho del div, va a su 100% */
+
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+
+}
+
+.ingreso_datos_contacto form h1{
+  padding:  50px 30px; /* espacio entre los bordes de un elemento y su contenido */
+}
+
+.texto_contacto {
+  display: flex; /* Usar flexbox */
+  flex-direction: column; /* usando display flex, con esta funcion hace que en evs de tirarse para la derecha pasa a columnas */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  width: 100%; /* el ancho del div, va a su 100% */
+  height: 100vh; /* ocupa el 100% de la altura del viewport */
+
+}
+
+.input-gruop{
+  
+  display: flex;
+  flex-direction: column;/* usando display flex, con esta funcion hace que en evs de tirarse para la derecha pasa a columnas */
+  text-align: center; /* centra el texto en su linea */ 
+  background-color: #183945;
+
+  border-radius: 20px; /* Los bordes del div se redondean */ 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* agrega efecto de sombra alrededor del marco del div */ 
+  
+}
+
+label {
+  color: black; /* Color del texto */
+  font-size: 20px; /* tamaño del texto */
+}
+
+input {
+  margin: 20px 80px; /* el espaciado entre cada imagen */
+  padding: 10px;  /* espacio entre los bordes de un elemento y su contenido */
+  border-style: ridge solid #5f5b5bd3 ; 
+  
+}
+
+.titulo-contacto {
+  padding: 50px 30px; /* espacio entre los bordes de un elemento y su contenido */
+}
+
+
+
+
+/* SOBRE NOSOTROS */
+.contenedor-sobre-nosotros {
+  display: flex; 
+  width: 100%;  /* el ancho del div, va a su 100% de su propio espacio*/
+  height: 100%; /* ocupa el 100% de su propio espacio */
+  
+}
+
+.sobre-nosotros{
+  width: 100%; /* ocupa el 100% de su propio espacio */
+  height: 100vh; /* ocupa el 100% de la altura del viewport */
+  text-align: center;  /* centra el texto en su linea */ 
+  display: flex; /* Usar flexbox */
+  flex-direction: column; /* usando display flex, con esta funcion hace que en ves de tirarse para la derecha pasa a columnas */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.sobre-nosotros h1 {
+  padding: 30px; /* espacio entre los bordes de un elemento y su contenido */
+}
+
+.sobre-nosotros img {
+  width: 400px; /* el ancho de cada imagen */
+  height: 300px; /* el largo de cada imagen */
+  margin: 40px; /* espacio entre los bordes de un elemento y otro elemento, lo suo para generar un espacio */
+}
+
+.ubicacion {
+  width: 100%; /* ocupa el 100% de su propio espacio */
+  height: 100vh; /* ocupa el 100% de la altura del viewport */
+  
+  text-align: center; /* centra el texto en su linea */ 
+  display: flex; /* Usar flexbox */
+  flex-direction: column; /* usando display flex, con esta funcion hace que en ves de tirarse para la derecha pasa a columnas */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  
+}
+
+.ubicacion h1 , h2{
+
+  margin: 10px 10px 30px 10px; /* espacio entre los bordes de un elemento y otro elemento, lo suo para generar un espacio */
+}
+
+.ubicacion img{
+
+  width: 400px; /* el ancho de cada imagen */
+  height: 300px; /* el alto de cada imagen */
+  margin: 10px 20px 40px 10px; /* espacio entre los bordes de un elemento y otro elemento, lo suo para generar un espacio */
+}
+
+
+
+/* Responsive para que pueda funcionar en diferentes pantallas */
+
+@media (max-width: 601px) {
+nav {   /* Barra del menu  */
+  
+  background-color: #1B414E; 
+}
+  
+  
+  
+ul {
+  list-style-type: none;    /* Quita los puntos de la lista */
+  overflow: hidden; /* Oculta cualquier contenido que sobresalga de la lista */
+  display: flex; /* organiza los elementos en forma de columnas */
+  height: 50px;
+}
+  
+  
+  
+li a {
+    
+  height: 50px;
+  padding: 0px 40px 0px 40px; 
+  color:white; /* Color del texto */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  font-family: "Arial Black"; /* Tipo de fuente */
+    
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  
+}
+
+.contenedor_contacto {
+
+  flex-direction: column;
+}
+
+.card_contacto{
+  flex-direction: column;
+}
+
+
+}
+
+@media (max-width: 910px) {
+
+  .contenedor-sobre-nosotros {
+
+    display: grid;
+    width: 100%;  
+    height: 100%;
+    
+  }
+  
+}
+
+@media (max-width: 1066px) {
+
+  .contenedor_contacto {
+    text-align: center;
+    display: grid;
+    min-height: 100vh;
+  
+  }
+  
+}
